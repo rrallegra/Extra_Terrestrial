@@ -1,0 +1,24 @@
+body {
+  font-size: 1.5rem;
+}
+
+.form-control {
+  display: inline-block;
+  width: 500px;
+  margin-top: 50px;
+}
+
+input, input[placeholder]{
+  font-style:italic;
+  
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+

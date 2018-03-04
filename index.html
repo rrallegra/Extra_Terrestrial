@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <br> <h1><center><strong>Aliens-R-Real</strong></center></h1> <br>
+  <div style="text-align: center">
+    <input type="button" id="first" onclick="firstPage()" value="First" />
+    <input type="button" id="next" onclick="nextPage()" value="Next" />
+    <input type="button" id="previous" onclick="previousPage()" value="Previous" />
+    <input type="button" id="last" onclick="lastPage()" value="Last" />
+
+
+  <h3> UFO Sightings Data </h3>
+   <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="form-group">
+          <input type="text" class="form-control" id="date/time" placeholder="Date(MM/DD/YYYY)">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="form-group">
+          <input type="text" class="form-control" id="city" placeholder="City">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="form-group">
+          <input type="text" class="form-control" id="state" placeholder="State">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="form-group">
+          <input type="text" class="form-control" id="country" placeholder="Country">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="form-group">
+          <input type="text" class="form-control" id="shape" placeholder="Shape">
+       </div>
+      </div>
+      <div class="col-md-2">
+        <div class="form-group">
+          <input type="text" class="form-control" id="duration" placeholder="Duration">
+       </div>
+      </div>
+      <div class="col-md-25">
+        <div class="form-group">
+          <a id="search" class="btn btn-default">Search</a>
+        </div>
+      </div>
+       
+      </div>    
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <table  class="table table-striped" id="myTable">
+          <thead>
+            <tr>
+              <th style="text-align: center">Date/Time</th>
+              <th style="text-align: center">City</th>
+              <th style="text-align: center">State</th>
+              <th style="text-align: center">Country</th>
+              <th style="text-align: center">Shape</th>
+              <th style="text-align: center">Duration(min)</th>
+              <th style="text-align: center">Comment</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+    <div id="list"></div>
+  </div>
+
+  <script src="data.js" type="text/javascript"></script>
+  <script src="index.js" type="text/javascript"></script> 
+
+</body>
+</html>
